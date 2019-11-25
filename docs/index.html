@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Plister  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="Plister  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">Plister Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">Plister Reference</a>
+        <img id="carat" src="img/carat.png" />
+        Plister  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/Plist.html">Plist</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Plist/Error.html">– Error</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs.html#/s:7Plister3AESV">AES</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <p><img src="https://github.com/mohamadrezakoohkan/Plister/blob/master/Plister/Plister.png" alt="Plister works with plists like a piece of cake"></p>
+<h1 id='plister' class='heading'>Plister</h1>
+
+<p>Working with property lists like a piece of cake. Plister creates,read,update and delete <code>.plist</code> files super fast in just <strong>one row</strong> :bowtie:</p>
+
+<p>Also values can encrypt by <strong>AES</strong> encryption :sunglasses: and plister will decrypt values when you need them! :alien:</p>
+
+<p>Speed of Plister is because it uses his own Cache system.</p>
+<h2 id='what-it-can-do' class='heading'>What it can do ?</h2>
+
+<p>Plister creates a property list by your command,save your given key,value pair, encrypt it as you wish and retrieves the value for given key.</p>
+<h2 id='requirements' class='heading'>Requirements</h2>
+
+<ul>
+<li>iOS 8.1+</li>
+<li>Swift 4.0+
+&gt;  Also fully compatible with <strong>Swift</strong> version <strong>5.x</strong></li>
+</ul>
+<h2 id='installation' class='heading'>Installation</h2>
+<h3 id='cocoapods' class='heading'>CocoaPods</h3>
+
+<p><a href="https://cocoapods.org">CocoaPods</a> is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate Dequer into your Xcode project using CocoaPods, specify it in your <code>Podfile</code>:</p>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'Plister'</span>
+</code></pre>
+
+<p>If you had problem with finding pod try to include source of project.</p>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'Plister'</span><span class="p">,</span> <span class="ss">:git</span> <span class="o">=&gt;</span> <span class="s1">'https://github.com/mohamadrezakoohkan/Plister.git'</span>
+</code></pre>
+
+<p>Then run <code>pod inistall</code> to add <strong>Plister</strong> pod to your project. then you should work inside new created <code>.xcworkspace</code></p>
+
+<hr>
+<h3 id='swift-package-manager' class='heading'>Swift Package Manager</h3>
+
+<p>You can use <a href="https://swift.org/package-manager">The Swift Package Manager</a> to install <code>Plister</code></p>
+
+<ul>
+<li><h5 id='using-xcode-swift-packages' class='heading'>Using XCode Swift Packages</h5>
+
+<p>In the <strong>Xcode</strong> menu bar choose this path:</p>
+
+<blockquote>
+<p><strong><code>File</code></strong> &gt; <strong><code>Swift Packages</code></strong> &gt; <strong><code>Add Package Dependency</code></strong></p>
+</blockquote>
+
+<p>In opened window type this repository address:</p>
+<pre class="highlight plaintext"><code>https://github.com/mohamadrezakoohkan/Plister.git
+</code></pre>
+
+<p>At the end choose your <strong>Package Option</strong> and simply add to your project.</p></li>
+<li><h5 id='manually' class='heading'>Manually</h5>
+
+<p>add the plister package description to your <code>Package.swift</code> as a <strong>dependency</strong> file:</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">PackageDescription</span>
+
+<span class="k">let</span> <span class="nv">package</span> <span class="o">=</span> <span class="kt">Package</span><span class="p">(</span>
+    <span class="nv">name</span><span class="p">:</span> <span class="s">"YOUR_PROJECT_NAME"</span><span class="p">,</span>
+    <span class="nv">dependencies</span><span class="p">:</span> <span class="p">[</span>
+        <span class="o">.</span><span class="nf">package</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="s">"https://github.com/mohamadrezakoohkan/Plister.git"</span><span class="p">,</span> <span class="nv">from</span><span class="p">:</span> <span class="s">"1.0.0"</span><span class="p">),</span>
+    <span class="p">],</span>
+<span class="nv">targets</span><span class="p">:</span> <span class="p">[</span>
+        <span class="o">.</span><span class="nf">target</span><span class="p">(</span>
+            <span class="nv">name</span><span class="p">:</span> <span class="s">"YOUR_TARGET_NAME"</span><span class="p">,</span>
+            <span class="nv">dependencies</span><span class="p">:</span> <span class="p">[</span><span class="s">"Plister"</span><span class="p">],</span>
+            <span class="nv">path</span><span class="p">:</span> <span class="s">"YOUR_TARGET_PATH"</span><span class="p">)</span>
+    <span class="p">]</span>
+<span class="p">)</span>
+</code></pre>
+
+<p>Then run <code>swift package generate-xcodeproj</code> in <strong>Terminal</strong> to generate Xcode project or <code>swift build</code> to build the project.</p>
+
+<p>If you are on <strong>Linux</strong> run <code>swift run</code> in <strong>Terminal</strong> to build and run the project.</p></li>
+</ul>
+
+<hr>
+<h3 id='manually' class='heading'>Manually</h3>
+
+<p>If you prefer not to use any of the aforementioned dependency managers, you can use source code manually. get latest relase from <a href="https://github.com/mohamadrezakoohkan/Plister/releases">Releases</a>.</p>
+<h2 id='usage' class='heading'>Usage</h2>
+
+<p>Example of how to implement Dequer in your project.</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">Plister</span>
+
+<span class="k">let</span> <span class="nv">plist</span> <span class="o">=</span> <span class="kt">Plist</span><span class="p">(</span><span class="nv">withNameAtDocumentDirectory</span><span class="p">:</span> <span class="s">"Github"</span><span class="p">)</span>
+
+<span class="n">plist</span><span class="o">.</span><span class="nf">set</span><span class="p">(</span><span class="s">"Mohamadreza Koohkan"</span><span class="p">,</span> <span class="nv">for</span><span class="p">:</span> <span class="s">"Developer"</span><span class="p">)</span>
+
+<span class="n">plist</span><span class="o">.</span><span class="nf">get</span><span class="p">(</span><span class="s">"Developer"</span><span class="p">)</span>
+<span class="c1">// output will be Mohamadreza Koohkan</span>
+
+</code></pre>
+<h3 id='example-project' class='heading'>Example project</h3>
+
+<p>Clone the project and use example project  for more.</p>
+<h2 id='contact' class='heading'>Contact</h2>
+
+<p>Follow and contact me on <a href="https://www.instagram.com/mohamadreza.codes/">Instagram</a>,  <a href="https://github.com/mohamadrezakoohkan">Github</a>, <a href="https://www.linkedin.com/in/mohammad-reza-koohkan-558306160/">LinkedIn</a> and <a href="https://stackoverflow.com/users/9706268/mohamad-reza-koohkan?tab=profile">stack overflow</a>. If you find an issue <a href="https://github.com/mohamadrezakoohkan/Plister/issues/new">open a ticket</a>. You can send me email at <a href="mailto:mohamad_koohkan@icloud.com">mohamad_koohkan@icloud.com</a> .</p>
+<h2 id='license' class='heading'>License</h2>
+
+<p>Plister is released under the <a href="https://github.com/mohamadrezakoohkan/Plister/blob/master/LICENSE.md">MIT license</a>.</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="https://github.com/mohamadrezakoohkan/Plister" target="_blank" rel="external">mohamadrezakoohkan</a>. All rights reserved. (Last updated: 2019-11-25)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.12.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

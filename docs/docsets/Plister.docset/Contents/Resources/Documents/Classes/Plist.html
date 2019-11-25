@@ -1,0 +1,1932 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Plist Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/Plist" class="dashAnchor"></a>
+    <a title="Plist Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Plister Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Plister Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Plist Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Plist.html">Plist</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Plist/Error.html">– Error</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:7Plister3AESV">AES</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Plist</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Plist</span></code></pre>
+
+                </div>
+              </div>
+            <p>Property list, A file with the default settings.</p>
+
+<p>In the macOS, iOS, NeXTSTEP, and GNUstep programming frameworks, property list files are files that store serialized objects.</p>
+
+<p>Property list files use the filename extension .plist, and thus are often referred to as p-list files.</p>
+
+<p><a href="https://en.wikipedia.org/wiki/Property_list">Wikipedia</a></p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">plist</span> <span class="o">=</span> <span class="kt">Plist</span><span class="p">(</span><span class="nv">withNameAtDocumentDirectory</span><span class="p">:</span> <span class="s">"Plister"</span><span class="p">)</span>
+<span class="n">plist</span><span class="o">.</span><span class="nf">set</span><span class="p">(</span><span class="mi">2020</span><span class="p">,</span><span class="nv">for</span><span class="p">:</span> <span class="s">"new.year"</span><span class="p">)</span>
+<span class="n">plist</span><span class="o">.</span><span class="nf">get</span><span class="p">(</span><span class="s">"new.year"</span><span class="p">)</span>
+<span class="c1">// Output: 2020</span>
+</code></pre>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Plister5PlistC10folderNameSSvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/folderName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Plister5PlistC10folderNameSSvpZ">folderName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Default folder name which stores plist. you can change it</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">folderName</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Plister5PlistC3url10Foundation3URLVvp"></a>
+                    <a name="//apple_ref/swift/Property/url" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Plister5PlistC3url10Foundation3URLVvp">url</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Url of plist wether inside a bundle or document directory</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Plister5PlistC9encryptedSbvp"></a>
+                    <a name="//apple_ref/swift/Property/encrypted" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Plister5PlistC9encryptedSbvp">encrypted</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return result of encryption object, if encryption was <code>nil</code> result will be false</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">encrypted</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Plister5PlistC10encryptionAA3AESVSgvp"></a>
+                    <a name="//apple_ref/swift/Property/encryption" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Plister5PlistC10encryptionAA3AESVSgvp">encryption</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An <strong>AES</strong> object that used to encrypt and decrypt properties value</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">encryption</span><span class="p">:</span> <span class="kt"><a href="../Structs.html#/s:7Plister3AESV">AES</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Plister5PlistC10dictionarySo19NSMutableDictionaryCSgvp"></a>
+                    <a name="//apple_ref/swift/Property/dictionary" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Plister5PlistC10dictionarySo19NSMutableDictionaryCSgvp">dictionary</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Original dictionary Get-only to plist.</p>
+
+<p>Modification occurs on <code>cache</code> property first, then at the end or on your command
+<code>cache</code> writes to plist and dictionary will updated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">dictionary</span><span class="p">:</span> <span class="kt">NSMutableDictionary</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Plister5PlistC6volumes5Int64Vvp"></a>
+                    <a name="//apple_ref/swift/Property/volume" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Plister5PlistC6volumes5Int64Vvp">volume</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Property list size with byte described</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">volume</span><span class="p">:</span> <span class="kt">Int64</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Plister5PlistC4sizeSSvp"></a>
+                    <a name="//apple_ref/swift/Property/size" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Plister5PlistC4sizeSSvp">size</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Property list size including <strong>Binary prefix</strong></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">size</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Plister5PlistC8fileNameSSvp"></a>
+                    <a name="//apple_ref/swift/Property/fileName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Plister5PlistC8fileNameSSvp">fileName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Property list file name</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fileName</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Plister5PlistC4nameSSvp"></a>
+                    <a name="//apple_ref/swift/Property/name" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Plister5PlistC4nameSSvp">name</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Property list name</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Plister5PlistC4saveyyF"></a>
+                    <a name="//apple_ref/swift/Method/save()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Plister5PlistC4saveyyF">save()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Write dictionary to document directory, no need to call this method <strong>Plist</strong>
+will do it when needed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">save</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Plister5PlistC15insideBundleUrlAC10Foundation3URLV_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(insideBundleUrl:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Plister5PlistC15insideBundleUrlAC10Foundation3URLV_tcfc">init(insideBundleUrl:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initialize a plist object with given url inside main bundle.</p>
+
+<p>every file inside a bundle is read-only so you can only read object attributes.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">url</span> <span class="o">=</span> <span class="kt">Bundle</span><span class="o">.</span><span class="n">main</span><span class="o">.</span><span class="nf">url</span><span class="p">(</span><span class="nv">forResource</span><span class="p">:</span> <span class="s">"Info"</span><span class="p">,</span> <span class="nv">withExtension</span><span class="p">:</span> <span class="s">"plist"</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">plist</span> <span class="o">=</span> <span class="kt">Plist</span><span class="p">(</span><span class="nv">mainBundleUrl</span><span class="p">:</span> <span class="n">url</span><span class="o">!</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">insideBundleUrl</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>url</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Url to plist inside a bundle.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Plister5PlistC27withNameAtDocumentDirectory06folderD0ACSS_SStcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(withNameAtDocumentDirectory:folderName:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Plister5PlistC27withNameAtDocumentDirectory06folderD0ACSS_SStcfc">init(withNameAtDocumentDirectory:folderName:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initialize a plist object with given name and store plist file inside
+document directory then you can read and write.</p>
+
+<p>If there is a plist which has same name this method only retrive
+that plist without any change to that file.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">name</span> <span class="o">=</span> <span class="s">"Client"</span>
+<span class="k">let</span> <span class="nv">plist</span> <span class="o">=</span> <span class="kt">Plist</span><span class="p">(</span><span class="nv">withNameAtDocumentDirectory</span><span class="p">:</span> <span class="n">name</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">withNameAtDocumentDirectory</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n"><a href="../Classes/Plist.html#/s:7Plister5PlistC10folderNameSSvpZ">folderName</a></span> <span class="nv">folder</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kt">Plist</span><span class="o">.</span><span class="n"><a href="../Classes/Plist.html#/s:7Plister5PlistC10folderNameSSvpZ">folderName</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>name</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Name of given plist file.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>folder</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Folder inside document directory, if there was not a folder,
+<strong>Plister</strong> created a folder with given name</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Plister5PlistC27withNameAtDocumentDirectory06folderD010encryptionACSS_SSAA3AESVtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(withNameAtDocumentDirectory:folderName:encryption:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Plister5PlistC27withNameAtDocumentDirectory06folderD010encryptionACSS_SSAA3AESVtcfc">init(withNameAtDocumentDirectory:folderName:encryption:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initialize a <strong>encrypted</strong> value plist object with given name and store plist file inside
+document directory then you can read and write. If there is a plist which
+has same name this method only retrive that plist without any change to that file.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">name</span> <span class="o">=</span> <span class="s">"Wallet"</span>
+<span class="k">let</span> <span class="nv">plist</span> <span class="o">=</span> <span class="kt">Plist</span><span class="p">(</span><span class="nv">withNameAtDocumentDirectory</span><span class="p">:</span> <span class="n">name</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="n">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="n">withNameAtDocumentDirectory</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n"><a href="../Classes/Plist.html#/s:7Plister5PlistC10folderNameSSvpZ">folderName</a></span> <span class="nv">folder</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kt">Plist</span><span class="o">.</span><span class="n"><a href="../Classes/Plist.html#/s:7Plister5PlistC10folderNameSSvpZ">folderName</a></span><span class="p">,</span> <span class="nv">encryption</span><span class="p">:</span> <span class="kt"><a href="../Structs.html#/s:7Plister3AESV">AES</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>name</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Name of given plist file.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>folder</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Folder inside document directory, if there was not a folder,
+<strong>Plister</strong> created a folder with given name</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>encryption</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>an AES object to encrypt and decrypt data.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Plister5PlistC6deleteyyACSgzFZ"></a>
+                    <a name="//apple_ref/swift/Method/delete(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Plister5PlistC6deleteyyACSgzFZ">delete(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delete given plist from <strong>DocumentDirectory</strong> and <strong>Deinitialize</strong> the object at
+same time.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">settings</span> <span class="o">=</span> <span class="kt">Plist</span><span class="p">(</span><span class="nv">withNameAtDocumentDirectory</span><span class="p">:</span> <span class="s">"Settings"</span><span class="p">)</span>
+<span class="kt">Plist</span><span class="o">.</span><span class="nf">delete</span><span class="p">(</span><span class="o">&amp;</span><span class="n">settings</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="s">"Settings: </span><span class="se">\(</span><span class="n">settings</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+<span class="c1">// Settings: nil</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">delete</span><span class="p">(</span><span class="n">_</span> <span class="nv">plist</span><span class="p">:</span> <span class="k">inout</span> <span class="kt">Plist</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>plist</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Plist object as a refrence of plist object to remove from memory and document directory</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Plister5PlistC7encrypty10Foundation4DataVSgypSgF"></a>
+                    <a name="//apple_ref/swift/Method/encrypt(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Plister5PlistC7encrypty10Foundation4DataVSgypSgF">encrypt(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Encrypt given value and returns encrypted data</p>
+
+<p>Takes any argument and convert to String then create a Data object from string, encoding in <strong>utf8</strong>
+and encrypt encoded utf8 to plist encryption algorithm</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">encrypt</span><span class="p">(</span><span class="n">_</span> <span class="nv">rawValue</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Data</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>rawValue</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Takes any argument</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Plister5PlistC7decrypty10Foundation4DataVSgAHF"></a>
+                    <a name="//apple_ref/swift/Method/decrypt(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Plister5PlistC7decrypty10Foundation4DataVSgAHF">decrypt(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Decrypt given encrypted data and returns decrypted data</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">decrypt</span><span class="p">(</span><span class="n">_</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">Data</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Data</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>data</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Takes an encrypted data</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Plister5PlistC19decryptedDictionary0C4DataSDySSypGSgypSg_tF"></a>
+                    <a name="//apple_ref/swift/Method/decryptedDictionary(decryptedData:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Plister5PlistC19decryptedDictionary0C4DataSDySSypGSgypSg_tF">decryptedDictionary(decryptedData:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Translate given decrypted data in most accurate performance and returns a <strong>Dictionary</strong></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">decryptedDictionary</span><span class="p">(</span><span class="n">decryptedData</span> <span class="nv">rawValue</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>decryptedData</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Takes a decrypted data</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Plister5PlistC19decryptedCollection0C4DataSayypGSgypSg_tF"></a>
+                    <a name="//apple_ref/swift/Method/decryptedCollection(decryptedData:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Plister5PlistC19decryptedCollection0C4DataSayypGSgypSg_tF">decryptedCollection(decryptedData:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Translate given decrypted data in most accurate performance and returns a <strong>Collection</strong></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">decryptedCollection</span><span class="p">(</span><span class="n">decryptedData</span> <span class="nv">rawValue</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>decryptedData</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Takes a decrypted data</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Plister5PlistC15decryptedString0C4DataSSSgypSg_tF"></a>
+                    <a name="//apple_ref/swift/Method/decryptedString(decryptedData:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Plister5PlistC15decryptedString0C4DataSSSgypSg_tF">decryptedString(decryptedData:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Translate given decrypted data in most accurate performance and returns a <strong>String</strong></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">decryptedString</span><span class="p">(</span><span class="n">decryptedData</span> <span class="nv">rawValue</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>decryptedData</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Takes a decrypted data</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Plister5PlistC13decryptedBool0C4DataSbSgypSg_tF"></a>
+                    <a name="//apple_ref/swift/Method/decryptedBool(decryptedData:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Plister5PlistC13decryptedBool0C4DataSbSgypSg_tF">decryptedBool(decryptedData:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Translate given decrypted data in most accurate performance and returns a <strong>Bool</strong></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">decryptedBool</span><span class="p">(</span><span class="n">decryptedData</span> <span class="nv">rawValue</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>decryptedData</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Takes a decrypted data</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Plister5PlistC12decryptedInt0C4DataSiSgypSg_tF"></a>
+                    <a name="//apple_ref/swift/Method/decryptedInt(decryptedData:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Plister5PlistC12decryptedInt0C4DataSiSgypSg_tF">decryptedInt(decryptedData:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Translate given decrypted data in most accurate performance and returns a <strong>Int</strong></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">decryptedInt</span><span class="p">(</span><span class="n">decryptedData</span> <span class="nv">rawValue</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>decryptedData</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Takes a decrypted data</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Plister5PlistC14decryptedFloat0C4DataSfSgypSg_tF"></a>
+                    <a name="//apple_ref/swift/Method/decryptedFloat(decryptedData:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Plister5PlistC14decryptedFloat0C4DataSfSgypSg_tF">decryptedFloat(decryptedData:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Translate given decrypted data in most accurate performance and returns a <strong>Float</strong></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">decryptedFloat</span><span class="p">(</span><span class="n">decryptedData</span> <span class="nv">rawValue</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Float</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>decryptedData</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Takes a decrypted data</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Plister5PlistC15decryptedDouble0C4DataSdSgypSg_tF"></a>
+                    <a name="//apple_ref/swift/Method/decryptedDouble(decryptedData:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Plister5PlistC15decryptedDouble0C4DataSdSgypSg_tF">decryptedDouble(decryptedData:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Translate given decrypted data in most accurate performance and returns a <strong>Double</strong></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">decryptedDouble</span><span class="p">(</span><span class="n">decryptedData</span> <span class="nv">rawValue</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>decryptedData</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Takes a decrypted data</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Plister5PlistC13decryptedDate0C4Data10Foundation0D0VSgypSg_tF"></a>
+                    <a name="//apple_ref/swift/Method/decryptedDate(decryptedData:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Plister5PlistC13decryptedDate0C4Data10Foundation0D0VSgypSg_tF">decryptedDate(decryptedData:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Translate given decrypted data in most accurate performance and returns a <strong>Date</strong></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">decryptedDate</span><span class="p">(</span><span class="n">decryptedData</span> <span class="nv">rawValue</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>decryptedData</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Takes a decrypted data</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Plister5PlistC5ErrorO"></a>
+                    <a name="//apple_ref/swift/Enum/Error" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Plister5PlistC5ErrorO">Error</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A type representing an error value that wont thrown but raise in debugger</p>
+
+                        <a href="../Classes/Plist/Error.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">Error</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Plister5PlistC9setObject_3foryypSg_SStF"></a>
+                    <a name="//apple_ref/swift/Method/setObject(_:for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Plister5PlistC9setObject_3foryypSg_SStF">setObject(_:for:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the value of the specified key to the specified value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setObject</span><span class="p">(</span><span class="n">_</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?,</span> <span class="k">for</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>value</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The value for the property identified by key.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of one of the receiver&rsquo;s properties.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Plister5PlistC12asCollectionSayyp3key_yp5valuetGyF"></a>
+                    <a name="//apple_ref/swift/Method/asCollection()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Plister5PlistC12asCollectionSayyp3key_yp5valuetGyF">asCollection()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return cached plist as a collection of key value pairs</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">asCollection</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">NSDictionary</span><span class="o">.</span><span class="kt">Element</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A Collection of (key,value)</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Plister5PlistC3set_3foryypSg_SStF"></a>
+                    <a name="//apple_ref/swift/Method/set(_:for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Plister5PlistC3set_3foryypSg_SStF">set(_:for:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the value of the specified key to the specified value.</p>
+
+<p>If plist encryption enabled, <strong>rawValue</strong> will encrypted with AES algorithm.
+and save to plist for given key.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">plist</span> <span class="o">=</span> <span class="kt">Plist</span><span class="p">(</span><span class="nv">withNameAtDocumentDirectory</span><span class="p">:</span> <span class="s">"Information"</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">key</span> <span class="o">=</span> <span class="s">"didUserSignedIn"</span>
+<span class="n">plist</span><span class="o">.</span><span class="nf">set</span><span class="p">(</span><span class="kc">true</span><span class="p">,</span> <span class="nv">for</span><span class="p">:</span> <span class="n">key</span><span class="p">)</span>
+<span class="c1">// Sets true value for didUserSignedIn key</span>
+<span class="n">plist</span><span class="o">.</span><span class="nf">get</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+<span class="c1">// result will be true</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">set</span><span class="p">(</span><span class="n">_</span> <span class="nv">rawValue</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?,</span> <span class="k">for</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>rawValue</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The value for the property identified by key.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of one of the receiver&rsquo;s properties.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Plister5PlistC3getyypSgSSF"></a>
+                    <a name="//apple_ref/swift/Method/get(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Plister5PlistC3getyypSgSSF">get(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the value for the property identified by a given key.</p>
+
+<p>If plist encryption enabled, value for given key is represented
+as <strong>decrypted</strong> Data that contains String, for better <strong>get</strong> use default methods to
+get value as bool,int,string,float,double,json,collection.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">get</span><span class="p">(</span><span class="n">_</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Any</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of one of the receiver&rsquo;s properties.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Plister5PlistC5cleanyyF"></a>
+                    <a name="//apple_ref/swift/Method/clean()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Plister5PlistC5cleanyyF">clean()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Overwrite a clean dictionary at plist url</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">clean</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Plister5PlistC6removeyySSd_tF"></a>
+                    <a name="//apple_ref/swift/Method/remove(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Plister5PlistC6removeyySSd_tF">remove(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Remove given tuple keys from plist</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">remove</span><span class="p">(</span><span class="n">_</span> <span class="nv">keys</span><span class="p">:</span> <span class="kt">String</span><span class="o">...</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Plister5PlistC6remove4keysySaySSG_tF"></a>
+                    <a name="//apple_ref/swift/Method/remove(keys:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Plister5PlistC6remove4keysySaySSG_tF">remove(keys:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Remove given collection keys from plist</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">remove</span><span class="p">(</span><span class="n">keys</span> <span class="nv">collection</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Plister5PlistC4data4from10Foundation4DataVSgyp_tF"></a>
+                    <a name="//apple_ref/swift/Method/data(from:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Plister5PlistC4data4from10Foundation4DataVSgyp_tF">data(from:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns data form archived object</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">data</span><span class="p">(</span><span class="n">from</span> <span class="nv">rootObject</span><span class="p">:</span> <span class="kt">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Data</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>rootObject</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>specific object.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Plister5PlistC6objectyypSgSSF"></a>
+                    <a name="//apple_ref/swift/Method/object(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Plister5PlistC6objectyypSgSSF">object(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns object form archived data. JSON</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">object</span><span class="p">(</span><span class="n">_</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Any</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>data</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>specific data.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Plister5PlistC4boolySbSgSSF"></a>
+                    <a name="//apple_ref/swift/Method/bool(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Plister5PlistC4boolySbSgSSF">bool(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns <strong>Bool</strong> value for the property identified by a given key.</p>
+<h2 id='encryption' class='heading'>Encryption</h2>
+
+<p>If plist encryption enabled, the result will decrypted and translate to <strong>Bool</strong> type with most accurate performance.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">bool</span><span class="p">(</span><span class="n">_</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of one of the receiver&rsquo;s properties.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Plister5PlistC3intySiSgSSF"></a>
+                    <a name="//apple_ref/swift/Method/int(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Plister5PlistC3intySiSgSSF">int(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns <strong>Int</strong> value for the property identified by a given key.</p>
+<h2 id='encryption' class='heading'>Encryption</h2>
+
+<p>If plist encryption enabled, the result will decrypted and translate to <strong>Int</strong> type with most accurate performance.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">int</span><span class="p">(</span><span class="n">_</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of one of the receiver&rsquo;s properties.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Plister5PlistC6doubleySdSgSSF"></a>
+                    <a name="//apple_ref/swift/Method/double(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Plister5PlistC6doubleySdSgSSF">double(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns <strong>Double</strong> value for the property identified by a given key.</p>
+<h2 id='encryption' class='heading'>Encryption</h2>
+
+<p>If plist encryption enabled, the result will decrypted and translate to <strong>Double</strong> type with most accurate performance.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">double</span><span class="p">(</span><span class="n">_</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of one of the receiver&rsquo;s properties.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Plister5PlistC5floatySfSgSSF"></a>
+                    <a name="//apple_ref/swift/Method/float(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Plister5PlistC5floatySfSgSSF">float(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns <strong>Float</strong> value for the property identified by a given key.</p>
+<h2 id='encryption' class='heading'>Encryption</h2>
+
+<p>If plist encryption enabled, the result will decrypted and translate to <strong>Float</strong> type with most accurate performance.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">float</span><span class="p">(</span><span class="n">_</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Float</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of one of the receiver&rsquo;s properties.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Plister5PlistC6stringySSSgSSF"></a>
+                    <a name="//apple_ref/swift/Method/string(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Plister5PlistC6stringySSSgSSF">string(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns <strong>String</strong> value for the property identified by a given key.</p>
+<h2 id='encryption' class='heading'>Encryption</h2>
+
+<p>If plist encryption enabled, the result will decrypted and translate to <strong>String</strong> type with most accurate performance.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">string</span><span class="p">(</span><span class="n">_</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of one of the receiver&rsquo;s properties.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Plister5PlistC10dictionaryySDySSypGSgSSF"></a>
+                    <a name="//apple_ref/swift/Method/dictionary(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Plister5PlistC10dictionaryySDySSypGSgSSF">dictionary(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns <strong>Dictionary</strong> value for the property identified by a given key.</p>
+<h2 id='encryption' class='heading'>Encryption</h2>
+
+<p>If plist encryption enabled, the result will decrypted and translate to <strong>Dictionary</strong> type with most accurate performance.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">dictionary</span><span class="p">(</span><span class="n">_</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of one of the receiver&rsquo;s properties.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Plister5PlistC10collectionySayypGSgSSF"></a>
+                    <a name="//apple_ref/swift/Method/collection(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Plister5PlistC10collectionySayypGSgSSF">collection(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns <strong>Collection</strong> value for the property identified by a given key.</p>
+<h2 id='encryption' class='heading'>Encryption</h2>
+
+<p>If plist encryption enabled, the result will decrypted and translate to <strong>Collection</strong> type with most accurate performance.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">collection</span><span class="p">(</span><span class="n">_</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of one of the receiver&rsquo;s properties.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Plister5PlistC4datey10Foundation4DateVSgSSF"></a>
+                    <a name="//apple_ref/swift/Method/date(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Plister5PlistC4datey10Foundation4DateVSgSSF">date(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns <strong>Date</strong> value for the property identified by a given key.</p>
+<h2 id='encryption' class='heading'>Encryption</h2>
+
+<p>If plist encryption enabled, the result will decrypted in <strong>TimeInterval</strong> format and translate to <strong>Date</strong> type
+with most accurate performance.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">date</span><span class="p">(</span><span class="n">_</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of one of the receiver&rsquo;s properties.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Plister5PlistC4nullyySSF"></a>
+                    <a name="//apple_ref/swift/Method/null(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Plister5PlistC4nullyySSF">null(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Remove value for given key.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">null</span><span class="p">(</span><span class="n">_</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of one of the receiver&rsquo;s properties.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="https://github.com/mohamadrezakoohkan/Plister" target="_blank" rel="external">mohamadrezakoohkan</a>. All rights reserved. (Last updated: 2019-11-25)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.12.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
