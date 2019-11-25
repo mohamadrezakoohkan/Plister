@@ -33,6 +33,7 @@
 		DDAE0B33236CA7800013986D /* MarginLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAE0B32236CA7800013986D /* MarginLabel.swift */; };
 		DDAE0B35236CABA40013986D /* SubmitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAE0B34236CABA40013986D /* SubmitButton.swift */; };
 		DDB60A9F238AF26D003485FB /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB60A9E238AF26D003485FB /* HeaderView.swift */; };
+		DDE65740238C722600433C6A /* Plister.png in Resources */ = {isa = PBXBuildFile; fileRef = DDE6573F238C722600433C6A /* Plister.png */; };
 		DDEA4A4B23817C6B00B71F2D /* PlisterEncryptedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEA4A4A23817C6B00B71F2D /* PlisterEncryptedTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +80,7 @@
 		DDAE0B34236CABA40013986D /* SubmitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitButton.swift; sourceTree = "<group>"; };
 		DDB60A9E238AF26D003485FB /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		DDDB530723829B29008C5ECA /* Plister.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Plister.entitlements; sourceTree = "<group>"; };
+		DDE6573F238C722600433C6A /* Plister.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Plister.png; sourceTree = SOURCE_ROOT; };
 		DDEA4A4A23817C6B00B71F2D /* PlisterEncryptedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlisterEncryptedTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,6 +135,7 @@
 				DDAE0AE8236C8C720013986D /* Info.plist */,
 				DDAE0B1C236C8CCF0013986D /* LICENSE.md */,
 				DDAE0B1A236C8CCF0013986D /* Plister.podspec */,
+				DDE6573F238C722600433C6A /* Plister.png */,
 				DDAE0B1B236C8CCF0013986D /* README.md */,
 				DDAE0B31236C9F210013986D /* Form */,
 			);
@@ -275,6 +278,7 @@
 				DDAE0B1D236C8CD00013986D /* Plister.podspec in Resources */,
 				DDAE0B1F236C8CD00013986D /* LICENSE.md in Resources */,
 				DDAE0AE2236C8C710013986D /* Main.storyboard in Resources */,
+				DDE65740238C722600433C6A /* Plister.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
