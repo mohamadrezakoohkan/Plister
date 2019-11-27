@@ -1,5 +1,5 @@
 
-![Plister works with plists like a piece of cake](https://github.com/mohamadrezakoohkan/Plister/blob/master/Plister.png)
+![Plister works with plists like a piece of cake](https://raw.githubusercontent.com/mohamadrezakoohkan/Plister/master/Plister.png)
 
 # Plister
 Working with property lists like a piece of cake.  
