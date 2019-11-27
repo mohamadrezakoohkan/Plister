@@ -1,18 +1,18 @@
 
 ![Plister works with plists like a piece of cake](https://raw.githubusercontent.com/mohamadrezakoohkan/Plister/master/Plister.png)
 
-[![Platforms](https://img.shields.io/badge/platform-iOS-brightgreen.svg)](https://github.com/mohamadrezakoohkan/Dequer/blob/master/README.md#requirements)
-[![Platforms](https://img.shields.io/badge/platform-macOS-brightgreen.svg)](https://github.com/mohamadrezakoohkan/Dequer/blob/master/README.md#requirements)
-[![Platforms](https://img.shields.io/badge/platform-watchOS-brightgreen.svg)](https://github.com/mohamadrezakoohkan/Dequer/blob/master/README.md#requirements)
-[![Platforms](https://img.shields.io/badge/platform-tvOS-brightgreen.svg)](https://github.com/mohamadrezakoohkan/Dequer/blob/master/README.md#requirements)
+[![Platforms](https://img.shields.io/badge/platform-iOS-brightgreen.svg)](https://github.com/mohamadrezakoohkan/Plister/blob/master/README.md#requirements)
+[![Platforms](https://img.shields.io/badge/platform-macOS-brightgreen.svg)](https://github.com/mohamadrezakoohkan/Plister/blob/master/README.md#requirements)
+[![Platforms](https://img.shields.io/badge/platform-watchOS-brightgreen.svg)](https://github.com/mohamadrezakoohkan/Plister/blob/master/README.md#requirements)
+[![Platforms](https://img.shields.io/badge/platform-tvOS-brightgreen.svg)](https://github.com/mohamadrezakoohkan/Plister/blob/master/README.md#requirements)
 
 
-[![Language](https://img.shields.io/badge/language-Swift_5.0-orange.svg)](https://github.com/mohamadrezakoohkan/Dequer/blob/master/README.md#requirements)
+[![Language](https://img.shields.io/badge/language-Swift_5.0-orange.svg)](https://github.com/mohamadrezakoohkan/Plister/blob/master/README.md#requirements)
 [![Build](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/mohamadrezakoohkan/Plister/releases)
 [![Test](https://img.shields.io/badge/test-passing-brightgreen)](https://github.com/mohamadrezakoohkan/Plister/tree/master/PlisterTests)
 [![Document](https://img.shields.io/badge/docs-100%25-brightgreen)](https://mohamadrezakoohkan.github.io/Plister/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/mohamadrezakoohkan/Plister/blob/master/LICENSE.md)
-[![Requirement](https://img.shields.io/badge/requirements-up%20to%20date-blue)](https://github.com/mohamadrezakoohkan/Dequer/blob/master/README.md#requirements)
+[![Requirement](https://img.shields.io/badge/requirements-up%20to%20date-blue)](https://github.com/mohamadrezakoohkan/Plister/blob/master/README.md#requirements)
 
 # Plister
 Working with property lists like a piece of cake.  
@@ -39,7 +39,7 @@ There is a list of available methods from Plister here in [Documentations](https
 
 ### CocoaPods
 
-[CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate Dequer into your Xcode project using CocoaPods, specify it in your `Podfile`:
+[CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate Plister into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
 pod 'Plister'
@@ -79,7 +79,7 @@ You can use [The Swift Package Manager](https://swift.org/package-manager) to in
     let package = Package(
         name: "YOUR_PROJECT_NAME",
         dependencies: [
-            .package(url: "https://github.com/mohamadrezakoohkan/Plister.git", from: "1.0.1"),
+            .package(url: "https://github.com/mohamadrezakoohkan/Plister.git", from: "1.0.2"),
         ],
     targets: [
             .target(
@@ -103,7 +103,7 @@ If you prefer not to use any of the aforementioned dependency managers, you can 
 
 ## Usage
 
-Example of how to implement Dequer in your project.
+Example of how to implement Plister in your project.
 
 ```swift
 import Plister
