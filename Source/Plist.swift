@@ -62,7 +62,7 @@ public class Plist {
     /// at last on `willTerminateNotification` and `didEnterBackgroundNotification`
     /// cache will write to document directory and `dictionary` property will updated.
     ///
-    lazy var cache: NSMutableDictionary? = {
+    public lazy var cache: NSMutableDictionary? = {
         return self.dictionary
     }()
     

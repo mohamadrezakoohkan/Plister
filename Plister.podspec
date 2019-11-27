@@ -11,7 +11,7 @@
 Pod::Spec.new do |s|
 
 s.name             = 'Plister'
-s.version          = '1.0.0'
+s.version          = '1.0.1'
 s.summary          = 'Working with property lists like a piece of cake.'
 s.homepage         = 'https://github.com/mohamadrezakoohkan/Plister'
 s.author           = { 'mohamadrezakoohkan' => 'mohamad_koohkan@icloud.com' }

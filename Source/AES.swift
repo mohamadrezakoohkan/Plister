@@ -25,33 +25,33 @@ public struct AES {
     
     /// Data representing key in utf8 format
     ///
-    private let key: Data
+    public let key: Data
     
     /// Data representing iv in utf8 format
     ///
-    private let iv: Data
+    public let iv: Data
     
     /// Advanced Encryption Standard, 128-bit block
     ///
-    private var algorithm: CCAlgorithm { CCAlgorithm(kCCAlgorithmAES) }
+    public var algorithm: CCAlgorithm { CCAlgorithm(kCCAlgorithmAES) }
     
     /// Perform PKCS7 padding.
     ///
     /// Electronic code book mode, default is CBC.
     ///
-    private var options: CCOptions { CCOptions(kCCOptionPKCS7Padding) }
+    public var options: CCOptions { CCOptions(kCCOptionPKCS7Padding) }
     
     /// Encrypt option
     ///
-    private var encOption: CCOptions { CCOperation(kCCEncrypt) }
+    public var encOption: CCOptions { CCOperation(kCCEncrypt) }
     
     /// Decrypt option
     ///
-    private var decOption: CCOptions { CCOperation(kCCDecrypt) }
+    public var decOption: CCOptions { CCOperation(kCCDecrypt) }
     
     /// Status where operation completed normally
     ///
-    private var successStatus: UInt32 { UInt32(kCCSuccess) }
+    public var successStatus: UInt32 { UInt32(kCCSuccess) }
     
     /// Evaluate a status, with needed status
     ///
@@ -59,13 +59,13 @@ public struct AES {
     ///   - current: Input status
     ///   - needed: UInt32 format of a **kCC** status.
     ///
-    func evaluate(_ current: CCCryptorStatus,with needed: UInt32) -> Bool {
+    public func evaluate(_ current: CCCryptorStatus,with needed: UInt32) -> Bool {
         return UInt32(current) == needed
     }
     
     /// Error Class used for AES errors.
     ///
-    private typealias error = Plist.Error
+    public typealias error = Plist.Error
         
     /// Default AES object for test purpose
     ///
@@ -89,7 +89,7 @@ public struct AES {
     ///   - key: Key string in 16 or 32 chars.
     ///   - iv: Initial vector in 16 chars.
     ///
-    init?(key: String, iv: String) {
+    public init?(key: String, iv: String) {
         let isKeyEnough = key.count == kCCKeySizeAES128 || key.count == kCCKeySizeAES256
         let isIvEnough = iv.count == kCCKeySizeAES128
         guard isKeyEnough, let keyData = key.data(using: .utf8) else { error.aesKeyFail(key: key).raise(); return nil }
@@ -104,7 +104,7 @@ public struct AES {
     /// - Parameters:
     ///   - data: Raw data
     ///
-    func encrypt(data: Data) -> Data? {
+    public func encrypt(data: Data) -> Data? {
         return crypt(data: data, option: self.encOption)
     }
     
@@ -113,7 +113,7 @@ public struct AES {
     /// - Parameters:
     ///   - data: Encrypted data
     ///
-    func decrypt(data: Data?) -> Data? {
+    public func decrypt(data: Data?) -> Data? {
         return crypt(data: data, option: self.decOption)
     }
     
@@ -125,7 +125,7 @@ public struct AES {
     ///   - data: **Encrypted Data** or **Raw Data**
     ///   - option: **kCCDecrypt** or **kCCEncrypt**
     ///
-    func crypt(data: Data?, option: CCOperation) -> Data? {
+    public func crypt(data: Data?, option: CCOperation) -> Data? {
         
         guard let data = data else { return nil }
         
