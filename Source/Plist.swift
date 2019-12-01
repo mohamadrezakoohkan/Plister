@@ -7,8 +7,13 @@
 //
 
 import Foundation
+
 #if os(iOS)
 import UIKit.UIApplication
+#elseif os(tvOS)
+import UIKit.UIApplication
+#elseif os(macOS)
+import AppKit.NSApplication
 #endif
 
 /// Property list, A file with the default settings.
@@ -28,7 +33,7 @@ import UIKit.UIApplication
 ///
 ///
 public class Plist {
-
+    
     /// Default plist file extension.
     ///
     internal static let typ = ".plist"
@@ -97,12 +102,22 @@ public class Plist {
     ///
     internal func observer() {
         #if os(iOS)
-        let center = NotificationCenter.default
-        let terminate: NSNotification.Name = UIApplication.willTerminateNotification
-        let background: NSNotification.Name = UIApplication.didEnterBackgroundNotification
-        center.addObserver(self, selector: #selector(self.save), name: terminate, object: nil)
-        center.addObserver(self, selector: #selector(self.save), name: background, object: nil)
+        self.setObserver(forNotification: UIApplication.willTerminateNotification,
+                         UIApplication.didEnterBackgroundNotification)
+        #elseif os(tvOS)
+        self.setObserver(forNotification: UIApplication.willTerminateNotification,
+                         UIApplication.didEnterBackgroundNotification)
+        #elseif os(macOS)
+        self.setObserver(forNotification: NSApplication.willTerminateNotification,
+                         NSApplication.didHideNotification)
         #endif
+    }
+    
+    
+    internal func setObserver(forNotification notifs: NSNotification.Name...) {
+        notifs.forEach {
+            NotificationCenter.default.addObserver(self, selector: #selector(self.save), name: $0, object: nil)
+        }
     }
     
     /// Helper for accessing path to given file when `url` is not available.
