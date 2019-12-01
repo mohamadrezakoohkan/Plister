@@ -4,11 +4,15 @@ on: [push]
 
 jobs:
   build:
+      branches: [master]
+      paths:
+      - 'Sources/**/*.swift'
 
     runs-on: macOS-latest
 
     steps:
     - uses: actions/checkout@v1
+    - run: swift -version
     - name: Build
       run: swift build -v
     - name: Run tests

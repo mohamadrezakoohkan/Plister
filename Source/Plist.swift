@@ -114,6 +114,8 @@ public class Plist {
     }
     
     
+    /// NotificationCenter will observer for given notifications
+    ///
     internal func setObserver(forNotification notifs: NSNotification.Name...) {
         notifs.forEach {
             NotificationCenter.default.addObserver(self, selector: #selector(self.save), name: $0, object: nil)
