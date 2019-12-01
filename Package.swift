@@ -25,7 +25,8 @@ let package = Package(
             name: "PlisterTests",
             dependencies: [
                 "Plister"
-            ]
+            ],
+            path: "PlisterTests"
         )
     ],
     swiftLanguageVersions: [
