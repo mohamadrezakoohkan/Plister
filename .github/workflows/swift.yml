@@ -3,7 +3,7 @@ name: Swift
 on:
     push:
         paths:
-            - '**/*.swift'
+            - '*.swift'
 
     pull_request:
         branches:
