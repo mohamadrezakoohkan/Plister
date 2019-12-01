@@ -1,13 +1,14 @@
 name: Swift
 
-on: [push]
+on:
+    push:
+        branches: [master]
+        paths:
+        - 'Sources/**/*.swift'
 
 jobs:
   build:
-      branches: [master]
-      paths:
-      - 'Sources/**/*.swift'
-
+  
     runs-on: macOS-latest
 
     steps:
