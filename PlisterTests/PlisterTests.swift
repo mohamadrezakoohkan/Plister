@@ -14,7 +14,7 @@ class PlisterTests: XCTestCase {
     
     let plist = Plist(withNameAtDocumentDirectory: "Test")
     
-    let range = 0...20
+    let range = 0...200000
     
     override func setUp() {
         super.setUp()

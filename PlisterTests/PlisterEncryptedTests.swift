@@ -27,6 +27,9 @@ class PlisterEncryptedTests: XCTestCase {
     let byteMultiplier32 = (data: "0123456789012345601234567890123456",range: 0...3)
 
     
+    override func setUp() {
+        print(plist.url)
+    }
     override func tearDown() {
         self.plist.save()
     }
