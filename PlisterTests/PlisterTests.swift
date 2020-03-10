@@ -79,7 +79,7 @@ class PlisterTests: XCTestCase {
     
     func testFileName() {
         let plist = Plist.init(withNameAtDocumentDirectory: "Become-Master")
-        PAssert(plist.fileName == "Become-Master.plist")
+        PAssertTrue(plist.fileName == "Become-Master.plist")
     }
     
     func testDelete() {
