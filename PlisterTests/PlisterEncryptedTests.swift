@@ -141,7 +141,7 @@ class PlisterEncryptedTests: XCTestCase {
         let input = self.date
         let decryptedData = self.encryptAndDecrypt(input.data)
         let result = self.plist.decryptedDate(decryptedData: decryptedData)
-        let dif = input.data.distance(to: result!)
+        let dif = input.data.timeIntervalSince(result!)
         let acceptance = (dif <= 10) && (dif >= -10)
         PAssertTrue(acceptance)
     }
