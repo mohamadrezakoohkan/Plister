@@ -176,7 +176,7 @@ public class Plist {
         let path = Plist.address(name: name)
         FileManager.default.folder(name: folder)
         FileManager.default.fileExists(atPath: path)
-            ? (self.url = URL(fileURLWithPath: path))
+            ? (self.url = .init(fileURLWithPath: path))
             : (self.url = .createPlist(at: Plist.folderName, name: name, of: Plist.typ))
         self.observer()
     }

@@ -36,7 +36,7 @@ internal extension URL {
     }
     
     func writeDictionary(withKey key: String) {
-        let root = Bundle.main.bundleIdentifier ?? "com.applecode.library.Plister"
+        let root = Bundle.main.bundleIdentifier ?? "codes.mohamadreza.library.plister"
         let dictionary: NSMutableDictionary = [root: key]
         dictionary.write(to: self, atomically: true)
     }

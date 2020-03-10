@@ -92,8 +92,17 @@ public struct AES {
     public init?(key: String, iv: String) {
         let isKeyEnough = key.count == kCCKeySizeAES128 || key.count == kCCKeySizeAES256
         let isIvEnough = iv.count == kCCKeySizeAES128
-        guard isKeyEnough, let keyData = key.data(using: .utf8) else { error.aesKeyFail(key: key).raise(); return nil }
-        guard isIvEnough, let ivData = iv.data(using: .utf8) else { error.aesInitialVectorFail(iv: iv).raise(); return nil }
+        
+        guard isKeyEnough, let keyData = key.data(using: .utf8) else {
+            error.aesKeyFail(key: key).raise()
+            return nil
+        }
+        
+        guard isIvEnough, let ivData = iv.data(using: .utf8) else {
+            error.aesInitialVectorFail(iv: iv).raise()
+            return nil
+        }
+        
         self.key = keyData
         self.iv  = ivData
     }

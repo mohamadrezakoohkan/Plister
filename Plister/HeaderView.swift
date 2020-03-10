@@ -20,7 +20,7 @@ final class HeaderView: UIView {
         ])
     }()
     
-    init(frame: CGRect,target: @escaping (SubmitButton) -> Void) {
+    init(frame: CGRect, target: @escaping (SubmitButton) -> Void) {
         self.target = target
         super.init(frame: frame)
         self.backgroundColor = .white

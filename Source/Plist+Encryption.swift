@@ -19,13 +19,14 @@ public extension Plist {
     /// and encrypt encoded utf8 to plist encryption algorithm
     ///
     func encrypt(_ rawValue: Any?) -> Data? {
-        guard let cryptor = self.encryption else { return nil }
-        guard let value = rawValue else { return nil }
-        guard let string = self.getString(value) else {
-            guard let data = value as? Data else { return nil }
-            return cryptor.encrypt(data: data)
+        guard let value = rawValue,
+            let cryptor = self.encryption else { return nil }
+
+        guard let string = self.getString(value),
+            let data = string.data(using: .utf8) else {
+                guard let data = value as? Data else { return nil }
+                return cryptor.encrypt(data: data)
         }
-        guard let data = string.data(using: .utf8) else { return nil }
         return cryptor.encrypt(data: data)
     }
     

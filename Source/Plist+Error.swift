@@ -58,7 +58,7 @@ public extension Plist {
         /// Raise given error in debugger
         ///
         public func raise() {
-            DispatchQueue.global().async {
+            DispatchQueue.main.async {
                 guard let err = self.errorDescription else {return}
                 debugPrint(Plist.Error.identifier,err)
             }

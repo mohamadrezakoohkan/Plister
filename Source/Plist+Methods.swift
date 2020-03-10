@@ -15,7 +15,7 @@ public extension Plist {
     /// - returns: A Collection of (key,value)
     ///
     func asCollection() -> [NSDictionary.Element] {
-        var result: [NSDictionary.Element] = []
+        var result = [NSDictionary.Element]()
         self.cache?.forEach { result.append($0)  }
         return result
     }

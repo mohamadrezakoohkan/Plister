@@ -14,14 +14,14 @@ class PlistUtilitiesTests: XCTestCase {
     func testUrlPath() {
         let url = URL(string: "default")
         let path = url?.path(to: "shit","is","happening") ?? ""
-        XCTAssertTrue(path == "default/shit/is/happening" )
+        PAssertTrue(path == "default/shit/is/happening" )
     }
     
     func testCombination() {
         let rhs = URL(string: "right/")!
         let lhs = "left"
         let combine = (rhs + lhs) + "amazing"
-        XCTAssertTrue(combine == URL(string: "right/left/amazing")!)
+        PAssertTrue(combine == URL(string: "right/left/amazing")!)
 
     }
     
@@ -30,7 +30,7 @@ class PlistUtilitiesTests: XCTestCase {
         let fileUrl = FileManager.documentDirectory + fileName
         fileUrl.writeDictionary(withKey: "write.key")
         let retrive: URL = .init(fileURLWithPath: fileUrl.path)
-        XCTAssertTrue(FileManager.default.fileExists(atPath: retrive.path))
+        PAssertTrue(FileManager.default.fileExists(atPath: retrive.path))
     }
     
     func testSize() {
@@ -38,14 +38,14 @@ class PlistUtilitiesTests: XCTestCase {
         let plist = Plist(withNameAtDocumentDirectory: "sizeTest")
         plist.remove(Bundle.main.bundleIdentifier ?? "com.applecode.library.Plister")
         plist.save()
-        XCTAssertTrue(posibilityRange.contains(plist.url.fileSize))
+        PAssertTrue(posibilityRange.contains(plist.url.fileSize))
     }
 
     func testJsonSerializationObject() {
         let json = ["mohamad": 22]
         let data = JSONSerialization.data(obj: json)!
         let string = String.init(data: data, encoding: .utf8)
-        XCTAssertEqual(string, "{\n  \"mohamad\" : 22\n}")
+        PAssert(string, "{\n  \"mohamad\" : 22\n}")
     }
     
     func testJsonSerializationData() {
@@ -56,8 +56,8 @@ class PlistUtilitiesTests: XCTestCase {
         let objectSerialized = JSONSerialization.object(data: data)! as! [String: Int]
         let jsonSerialized = JSONSerialization.json(data: data)! as! [String: Int]
         let collectionSerialized = JSONSerialization.collection(data: collectionData)! as! [String]
-        XCTAssertEqual(objectSerialized,json)
-        XCTAssertEqual(jsonSerialized,json)
-        XCTAssertEqual(collectionSerialized,collection)
+        PAssert(objectSerialized,json)
+        PAssert(jsonSerialized,json)
+        PAssert(collectionSerialized,collection)
     }
 }

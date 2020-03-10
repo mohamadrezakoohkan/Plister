@@ -10,11 +10,11 @@ import UIKit
 
 class ViewController: UITableViewController {
     
-    let information = Plist.init(withNameAtDocumentDirectory: "Information")
+    let information = Plist(withNameAtDocumentDirectory: "Information")
     let cellId = "informationCell"
 
     @available(iOS 9.0, *)
-    lazy var header: HeaderView = .init(frame: .zero, target: self.submitted(_:))
+    lazy var header: HeaderView = HeaderView(frame: .zero, target: self.submitted(_:))
     
     var data: [NSDictionary.Element] { return self.information.asCollection() }
 
