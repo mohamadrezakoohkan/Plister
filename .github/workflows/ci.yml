@@ -39,7 +39,7 @@ jobs:
         run: |
           xcodebuild build -project Plister.xcodeproj -scheme Plister -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
         env:
-          destination: ${{ matrix.destination }}
+         destination: ${{ matrix.destination }}
 
   Test:
     name: Test
@@ -61,7 +61,7 @@ jobs:
         run: |
           bash <(curl -s https://codecov.io/bash)
         env:
-          destination: ${{ matrix.destination }}
+         destination: ${{ matrix.destination }}
 
 
 
