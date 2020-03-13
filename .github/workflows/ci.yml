@@ -1,4 +1,4 @@
-name: Test
+name: Plister CI
 
 on: [push,pull_request,release]
 
@@ -60,10 +60,12 @@ jobs:
         env:
          destination: ${{ matrix.destination }}
          
+  CodeCoverage:
+    name: Code coverage # codecov.io
+    runs-on: macOS-latest
+    setps:
       - name: Update code coverage
         run: |
           bash <(curl -s https://codecov.io/bash)
-
-
 
 
