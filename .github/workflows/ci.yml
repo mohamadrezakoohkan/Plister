@@ -23,7 +23,6 @@ jobs:
           swift test -v
         
   Build:
-    name: Build
     runs-on: ${{ matrix.os }}
     strategy:
         matrix:
@@ -42,7 +41,6 @@ jobs:
          destination: ${{ matrix.destination }}
 
   Test:
-    name: Test
     runs-on: ${{ matrix.os }}
     strategy:
         matrix:
@@ -63,7 +61,7 @@ jobs:
   CodeCoverage:
     name: Code coverage # codecov.io
     runs-on: macOS-latest
-    setps:
+    steps:
       - name: Checkout to master
         uses: actions/checkout@master
       - name: Update code coverage
