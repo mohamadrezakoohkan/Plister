@@ -11,7 +11,7 @@ jobs:
     runs-on: macOS-latest
     strategy:
         matrix:
-          destination: ['platform=iOS Simulator,OS=13.3,name=iPhone 11']
+          destination-iOS13: ['platform=iOS Simulator,OS=13.3,name=iPhone 11']
 
     steps:
       - name: Checkout
@@ -22,10 +22,10 @@ jobs:
 
       - name: Test on iOS 13.3
         run: |
-          xcodebuild test -project Plister.xcodeproj -scheme Plister -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+          xcodebuild test -project Plister.xcodeproj -scheme Plister -destination "${destination-iOS13}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
 
         env:
-         destination: ${{ matrix.destination }}
+         destination-iOS13: ${{ matrix.destination-iOS13 }}
       - name: Update code coverage
         run: |
           bash <(curl -s https://codecov.io/bash) -J 'Plister'
