@@ -67,5 +67,21 @@ jobs:
       - name: Update code coverage
         run: |
           bash <(curl -s https://codecov.io/bash)
+          
+          
+          
+  Archive:
+    runs-on: macOS-latest
+    steps:
+      - name: Checkout to master
+        uses: actions/checkout@master
+      - name: Archive
+        run: |
+          xcodebuild archive -project Plister.xcodeproj -scheme Plister -archivePath Plister.xcarchive
+      - name: Create ipa
+        run: |
+          xcodebuild -exportArchive -archivePath Plister.xcarchive -exportPath ipa -exportOptionsPlist ExportOptions.plist
+
+
 
 
