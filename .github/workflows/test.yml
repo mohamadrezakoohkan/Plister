@@ -2,16 +2,22 @@ name: Test
 
 on:
    push:
-      branches:
-        - master
-
+       branches:
+           - master
+        
+   pull_request:
+       branches:
+           - master
 jobs:
   test:
     name: Test
     runs-on: macOS-latest
     strategy:
         matrix:
-          destinationiOS13: ['platform=iOS Simulator,OS=13.3,name=iPhone 11']
+          iOS13: ['platform=iOS Simulator,OS=13.3,name=iPhone 11']
+          iOS12: ['platform=iOS Simulator,OS=12.2,name=iPhone X']
+          iOS11: ['platform=iOS Simulator,OS=11.3,name=iPhone 7']
+          AppleTV: ['platform=tvOS Simulator,OS=12.2,name=Apple TV 4K']
 
     steps:
       - name: Checkout
@@ -22,10 +28,22 @@ jobs:
 
       - name: Test on iOS 13.3
         run: |
-          xcodebuild test -project Plister.xcodeproj -scheme Plister -destination "${destinationiOS13}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+          xcodebuild test -project Plister.xcodeproj -scheme Plister -destination "${iOS13}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+        
+      - name: Test on iOS 12.2
+        run: |
+          xcodebuild test -project Plister.xcodeproj -scheme Plister -destination "${iOS12}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+            
+      - name: Test on iOS 11.3
+        run: |
+          xcodebuild test -project Plister.xcodeproj -scheme Plister -destination "${iOS11}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
 
         env:
-         destinationiOS13: ${{ matrix.destinationiOS13 }}
+         iOS13: ${{ matrix.iOS13 }}
+         iOS12: ${{ matrix.iOS12 }}
+         iOS11: ${{ matrix.iOS11 }}
+         AppleTV: ${{ matrix.AppleTV }}
+
       - name: Update code coverage
         run: |
           bash <(curl -s https://codecov.io/bash)
