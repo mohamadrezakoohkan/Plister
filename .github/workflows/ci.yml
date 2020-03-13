@@ -64,6 +64,8 @@ jobs:
     name: Code coverage # codecov.io
     runs-on: macOS-latest
     setps:
+      - name: Checkout to master
+        uses: actions/checkout@master
       - name: Update code coverage
         run: |
           bash <(curl -s https://codecov.io/bash)
