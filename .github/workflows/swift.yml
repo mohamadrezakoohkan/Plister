@@ -1,4 +1,4 @@
-name: Plister CI
+name: Swift Build
 
 on:
     push:

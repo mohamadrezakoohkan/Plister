@@ -10,7 +10,7 @@ jobs:
         matrix:
           os: [macOS-latest]
           destination: [
-            'platform:iOS, id:dvtdevice-DVTiPhonePlaceholder-iphoneos:placeholder, name:Generic iOS Device'
+            'platform=iOS Simulator,OS=13.3,name=iPhone 11'
           ]
 
     steps:
