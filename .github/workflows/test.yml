@@ -23,18 +23,10 @@ jobs:
         run: |
           xcodebuild clean
 
-      - name: Test on iOS (13.3,12.2,11.3) and Apple TV
+      - name: Test
         run: |
           xcodebuild test -project Plister.xcodeproj -scheme Plister -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
         
-      - name: Test on iOS 12.2
-        run: |
-          xcodebuild test -project Plister.xcodeproj -scheme Plister -destination "${iOS12}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
-            
-      - name: Test on iOS 11.3
-        run: |
-          xcodebuild test -project Plister.xcodeproj -scheme Plister -destination "${iOS11}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
-
         env:
           destination: ${{ matrix.destination }}
 
