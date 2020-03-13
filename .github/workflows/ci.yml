@@ -80,7 +80,7 @@ jobs:
 #          xcodebuild archive -project Plister.xcodeproj -scheme Plister -archivePath Plister.xcarchive
 #      - name: Create ipa
 #        run: |
-          xcodebuild -exportArchive -archivePath Plister.xcarchive -exportPath ipa -exportOptionsPlist ExportOptions.plist
+#          xcodebuild -exportArchive -archivePath Plister.xcarchive -exportPath ipa -exportOptionsPlist ExportOptions.plist
 
 
 
