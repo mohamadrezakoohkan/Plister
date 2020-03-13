@@ -1,4 +1,4 @@
-name: Test
+name: Build
 
 on: [push,pull_request,release]
 
@@ -10,7 +10,7 @@ jobs:
         matrix:
           os: [macOS-latest]
           destination: [
-            'platform=iOS Simulator,OS=13.3,name=iPhone 11'
+            'platform:iOS, id:dvtdevice-DVTiPhonePlaceholder-iphoneos:placeholder, name:Generic iOS Device'
           ]
 
     steps:
@@ -21,15 +21,12 @@ jobs:
         run: |
           xcodebuild clean
 
-      - name: Test
+      - name: Build
         run: |
-          xcodebuild test -project Plister.xcodeproj -scheme Plister -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+          xcodebuild build -project Plister -scheme Plister.xcodeproj -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
         
         env:
           destination: ${{ matrix.destination }}
 
-      - name: Update code coverage
-        run: |
-          bash <(curl -s https://codecov.io/bash)
 
 

@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		DD033112236EB0A100B2F5F7 /* Plist+Encryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD033111236EB0A100B2F5F7 /* Plist+Encryption.swift */; };
 		DD033114236EB0D700B2F5F7 /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD033113236EB0D700B2F5F7 /* AES.swift */; };
-		DD498C63241C01430090BAC1 /* swift.yml in Resources */ = {isa = PBXBuildFile; fileRef = DD498C62241C01430090BAC1 /* swift.yml */; };
-		DD498C65241C03070090BAC1 /* test.yml in Resources */ = {isa = PBXBuildFile; fileRef = DD498C64241C03070090BAC1 /* test.yml */; };
+		DD498C6B241C2B600090BAC1 /* test.yml in Resources */ = {isa = PBXBuildFile; fileRef = DD498C68241C2B600090BAC1 /* test.yml */; };
+		DD498C6C241C2B600090BAC1 /* swift.yml in Resources */ = {isa = PBXBuildFile; fileRef = DD498C69241C2B600090BAC1 /* swift.yml */; };
+		DD498C6D241C2B600090BAC1 /* build.yml in Resources */ = {isa = PBXBuildFile; fileRef = DD498C6A241C2B600090BAC1 /* build.yml */; };
 		DDAE0ADB236C8C710013986D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAE0ADA236C8C710013986D /* AppDelegate.swift */; };
 		DDAE0ADD236C8C710013986D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAE0ADC236C8C710013986D /* SceneDelegate.swift */; };
 		DDAE0ADF236C8C710013986D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAE0ADE236C8C710013986D /* ViewController.swift */; };
@@ -52,8 +53,9 @@
 /* Begin PBXFileReference section */
 		DD033111236EB0A100B2F5F7 /* Plist+Encryption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Plist+Encryption.swift"; sourceTree = "<group>"; };
 		DD033113236EB0D700B2F5F7 /* AES.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES.swift; sourceTree = "<group>"; };
-		DD498C62241C01430090BAC1 /* swift.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; name = swift.yml; path = .github/workflows/swift.yml; sourceTree = SOURCE_ROOT; };
-		DD498C64241C03070090BAC1 /* test.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; name = test.yml; path = .github/workflows/test.yml; sourceTree = SOURCE_ROOT; };
+		DD498C68241C2B600090BAC1 /* test.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = test.yml; sourceTree = "<group>"; };
+		DD498C69241C2B600090BAC1 /* swift.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swift.yml; sourceTree = "<group>"; };
+		DD498C6A241C2B600090BAC1 /* build.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = build.yml; sourceTree = "<group>"; };
 		DDAE0AD7236C8C710013986D /* Plister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDAE0ADA236C8C710013986D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDAE0ADC236C8C710013986D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD498C67241C2B600090BAC1 /* workflows */ = {
+			isa = PBXGroup;
+			children = (
+				DD498C68241C2B600090BAC1 /* test.yml */,
+				DD498C6A241C2B600090BAC1 /* build.yml */,
+				DD498C69241C2B600090BAC1 /* swift.yml */,
+			);
+			name = workflows;
+			path = .github/workflows;
+			sourceTree = SOURCE_ROOT;
+		};
 		DDAE0ACE236C8C710013986D = {
 			isa = PBXGroup;
 			children = (
@@ -141,8 +154,7 @@
 				DDAE0B1A236C8CCF0013986D /* Plister.podspec */,
 				DDE6573F238C722600433C6A /* Plister.png */,
 				DDAE0B1B236C8CCF0013986D /* README.md */,
-				DD498C64241C03070090BAC1 /* test.yml */,
-				DD498C62241C01430090BAC1 /* swift.yml */,
+				DD498C67241C2B600090BAC1 /* workflows */,
 				DDAE0B31236C9F210013986D /* Form */,
 			);
 			path = Plister;
@@ -278,14 +290,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD498C6B241C2B600090BAC1 /* test.yml in Resources */,
+				DD498C6C241C2B600090BAC1 /* swift.yml in Resources */,
 				DDAE0AE7236C8C720013986D /* LaunchScreen.storyboard in Resources */,
 				DDAE0AE4236C8C720013986D /* Assets.xcassets in Resources */,
-				DD498C65241C03070090BAC1 /* test.yml in Resources */,
 				DDAE0B1E236C8CD00013986D /* README.md in Resources */,
+				DD498C6D241C2B600090BAC1 /* build.yml in Resources */,
 				DDAE0B1D236C8CD00013986D /* Plister.podspec in Resources */,
 				DDAE0B1F236C8CD00013986D /* LICENSE.md in Resources */,
 				DDAE0AE2236C8C710013986D /* Main.storyboard in Resources */,
-				DD498C63241C01430090BAC1 /* swift.yml in Resources */,
 				DDE65740238C722600433C6A /* Plister.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
