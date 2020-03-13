@@ -4,7 +4,7 @@ on: [push,pull_request,release]
 
 jobs:
 
-  Swift build:
+  SwiftBuild:
     runs-on: macOS-latest
     steps:
       - name: Checkout to master
@@ -13,7 +13,7 @@ jobs:
         run: |
           swift build -v
 
-  Swift test:
+  SwiftTest:
     runs-on: macOS-latest
     steps:
       - name: Checkout to master
