@@ -19,9 +19,7 @@ jobs:
       - name: Clean
         run: |
           xcodebuild clean
-      - name: Build generic iOS devices
-        run: |
-          xcodebuild build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+
       - name: Test on iOS 13.3
         run: |
           xcodebuild test -project Plister.xcodeproj -scheme Plister -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
