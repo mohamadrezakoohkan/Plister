@@ -9,10 +9,12 @@ jobs:
     strategy:
         matrix:
           os: [macOS-latest]
-          iOS13: ['platform=iOS Simulator,OS=13.3,name=iPhone 11']
-          iOS12: ['platform=iOS Simulator,OS=12.2,name=iPhone X']
-          iOS11: ['platform=iOS Simulator,OS=11.3,name=iPhone 7']
-          AppleTV: ['platform=tvOS Simulator,OS=12.2,name=Apple TV 4K']
+          destination: [
+            'platform=iOS Simulator,OS=13.3,name=iPhone 11',
+            'platform=iOS Simulator,OS=12.2,name=iPhone X',
+            'platform=iOS Simulator,OS=11.3,name=iPhone 7',
+            'platform=tvOS Simulator,OS=12.2,name=Apple TV 4K'
+          ]
 
     steps:
       - name: Checkout
@@ -21,9 +23,9 @@ jobs:
         run: |
           xcodebuild clean
 
-      - name: Test on iOS 13.3
+      - name: Test on iOS (13.3,12.2,11.3) and Apple TV
         run: |
-          xcodebuild test -project Plister.xcodeproj -scheme Plister -destination "${iOS13}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+          xcodebuild test -project Plister.xcodeproj -scheme Plister -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
         
       - name: Test on iOS 12.2
         run: |
@@ -34,10 +36,7 @@ jobs:
           xcodebuild test -project Plister.xcodeproj -scheme Plister -destination "${iOS11}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
 
         env:
-          iOS13: ${{ matrix.iOS13 }}
-          iOS12: ${{ matrix.iOS12 }}
-          iOS11: ${{ matrix.iOS11 }}
-          AppleTV: ${{ matrix.AppleTV }}
+          destination: ${{ matrix.destination }}
 
       - name: Update code coverage
         run: |
