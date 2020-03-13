@@ -149,7 +149,10 @@ class PlisterEncryptedTests: XCTestCase {
     func testDateEncrypt() {
         let input = self.date
         self.plist.set(input.data, for: input.key)
-        PAssert(self.plist.date(input.key),input.data)
+        let result = self.plist.date(input.key)
+        let dif = input.data.timeIntervalSince(result!)
+        let acceptance = (dif <= 10) && (dif >= -10)
+        PAssertTrue(acceptance)
     }
     
 }

@@ -72,6 +72,21 @@ class PlisterTests: XCTestCase {
         }
     }
     
+    func testVolume() {
+        let expectedVolume: Int64 = 255
+        let plist = Plist(withNameAtDocumentDirectory: "Volume")
+        plist.set(1, for: "something")
+        PAssert(expectedVolume, plist.volume)
+    }
+    
+    func testSize() {
+        let expectedSize: String = "253 bytes"
+        let plist = Plist(withNameAtDocumentDirectory: "Size")
+        plist.set("mohamadreza", for: "name")
+        plist.set(0, for: "role")
+        PAssert(expectedSize, plist.size)
+    }
+    
     func testName() {
         let plist = Plist.init(withNameAtDocumentDirectory: "Position")
         PAssert(plist.name, "Position")
