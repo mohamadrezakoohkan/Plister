@@ -1,6 +1,6 @@
 name: Test
 
-on: [push,pull_request,release,tags]
+on: [push,pull_request,release]
 
 jobs:
   test:
