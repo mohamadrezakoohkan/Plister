@@ -60,13 +60,23 @@ jobs:
          
   CodeCoverage:
     name: Code coverage # codecov.io
-    runs-on: macOS-latest
+    runs-on: ${{ matrix.os }}
+    strategy:
+        matrix:
+          os: [macOS-latest]
+          destination: ['platform=iOS Simulator,OS=13.3,name=iPhone 11']
     steps:
       - name: Checkout to master
         uses: actions/checkout@master
+      - name: Preapre code coverage report
+        run: |
+          xcodebuild -project Plister.xcodeproj -scheme Plister -destination "${destination}" build test
       - name: Update code coverage
         run: |
-          bash <(curl -s https://codecov.io/bash)
+          bash <(curl -s https://codecov.io/bash) -J 'Plister'
+        env:
+         destination: ${{ matrix.destination }}
+
           
           
           
