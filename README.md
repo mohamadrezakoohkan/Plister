@@ -18,7 +18,8 @@
 Working with property lists like a piece of cake.  
 Plister creates,read,update and delete `.plist` files super fast in just **one row** :bowtie:  
 Also values can encrypt by **AES** encryption :sunglasses: and plister will decrypt values when you need them! :alien:  
-Speed of Plister is because it uses his own Cache system.
+Speed of Plister is because it uses his own Cache system.  
+Also this project is fully stable and 86% code coverage resultss can be found in *[codecov.io](https://codecov.io/gh/mohamadrezakoohkan/Plister/commit/)*
 
 ## What it can do ?
 
