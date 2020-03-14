@@ -66,7 +66,7 @@ jobs:
         uses: actions/checkout@master
       - name: Preapre code coverage report
         run: |
-          - xcodebuild -scheme Plister -project Plister.xcodeproj -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=13.3,name=iPhone 11' build test
+          xcodebuild -scheme Plister -project Plister.xcodeproj -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=13.3,name=iPhone 11' build test
       - name: Update code coverage
         run: |
           bash <(curl -s https://codecov.io/bash) -J 'Plister'
