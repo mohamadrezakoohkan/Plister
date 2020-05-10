@@ -27,7 +27,7 @@ jobs:
     strategy:
         matrix:
           os: [macOS-latest]
-          destination: ['platform=iOS Simulator,OS=13.3,name=iPhone 11']
+          destination: ['platform=iOS Simulator,OS=13.4,name=iPhone 11']
     steps:
       - name: Checkout to master
         uses: actions/checkout@master
@@ -45,7 +45,7 @@ jobs:
     strategy:
         matrix:
           os: [macOS-latest]
-          destination: ['platform=iOS Simulator,OS=13.3,name=iPhone 11']
+          destination: ['platform=iOS Simulator,OS=13.4,name=iPhone 11']
     steps:
       - name: Checkout to master
         uses: actions/checkout@master
@@ -66,7 +66,7 @@ jobs:
         uses: actions/checkout@master
       - name: Preapre code coverage report
         run: |
-          xcodebuild -scheme Plister -project Plister.xcodeproj -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=13.3,name=iPhone 11' build test
+          xcodebuild -scheme Plister -project Plister.xcodeproj -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=13.4,name=iPhone 11' build tests
       - name: Update code coverage
         run: |
           bash <(curl -s https://codecov.io/bash) -J 'Plister'
