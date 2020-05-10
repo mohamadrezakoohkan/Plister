@@ -190,4 +190,12 @@ class PlisterTests: XCTestCase {
             PFail(error.localizedDescription)
         }
     }
+    
+    func testCodable() {
+        let user = User(name: "mohammadreza", age: 22, createdAt: Date())
+        self.plist.set(user, for: "test.codable")
+        let savedUser = self.plist.get("test.codable") as! User
+        PAssert(savedUser.name,user.name)
+    }
 }
+

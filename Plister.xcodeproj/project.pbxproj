@@ -10,6 +10,7 @@
 		DD033112236EB0A100B2F5F7 /* Plist+Encryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD033111236EB0A100B2F5F7 /* Plist+Encryption.swift */; };
 		DD033114236EB0D700B2F5F7 /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD033113236EB0D700B2F5F7 /* AES.swift */; };
 		DD498C6B241C2B600090BAC1 /* ci.yml in Resources */ = {isa = PBXBuildFile; fileRef = DD498C68241C2B600090BAC1 /* ci.yml */; };
+		DD5B38362468997F009A0E27 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5B38352468997F009A0E27 /* User.swift */; };
 		DDAE0ADB236C8C710013986D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAE0ADA236C8C710013986D /* AppDelegate.swift */; };
 		DDAE0ADD236C8C710013986D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAE0ADC236C8C710013986D /* SceneDelegate.swift */; };
 		DDAE0ADF236C8C710013986D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAE0ADE236C8C710013986D /* ViewController.swift */; };
@@ -52,6 +53,7 @@
 		DD033111236EB0A100B2F5F7 /* Plist+Encryption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Plist+Encryption.swift"; sourceTree = "<group>"; };
 		DD033113236EB0D700B2F5F7 /* AES.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES.swift; sourceTree = "<group>"; };
 		DD498C68241C2B600090BAC1 /* ci.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = ci.yml; sourceTree = "<group>"; };
+		DD5B38352468997F009A0E27 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DDAE0AD7236C8C710013986D /* Plister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDAE0ADA236C8C710013986D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDAE0ADC236C8C710013986D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				DDAE0B29236C8F920013986D /* PlisterStringTests.swift */,
 				DDAE0B2B236C8FB70013986D /* PlistUtilitiesTests.swift */,
 				DDAE0B26236C8F320013986D /* PlisterTests-Bridging-Header.h */,
+				DD5B38352468997F009A0E27 /* User.swift */,
 			);
 			path = PlisterTests;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				DDAE0B2A236C8F920013986D /* PlisterStringTests.swift in Sources */,
 				DDAE0B28236C8F320013986D /* PlisterTests.swift in Sources */,
 				DDEA4A4B23817C6B00B71F2D /* PlisterEncryptedTests.swift in Sources */,
+				DD5B38362468997F009A0E27 /* User.swift in Sources */,
 				DDAE0B2C236C8FB70013986D /* PlistUtilitiesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -490,7 +494,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Plister/Plister.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = QZ8D8NYCJ8;
 				INFOPLIST_FILE = Plister/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
@@ -498,7 +502,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.7;
+				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.applecode.library.Plister;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
@@ -513,7 +517,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Plister/Plister.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = KXGZDK8WNM;
 				INFOPLIST_FILE = Plister/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
@@ -521,7 +525,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.7;
+				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.applecode.library.Plister;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
