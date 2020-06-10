@@ -80,7 +80,7 @@ You can use [The Swift Package Manager](https://swift.org/package-manager) to in
     let package = Package(
         name: "YOUR_PROJECT_NAME",
         dependencies: [
-            .package(url: "https://github.com/mohamadrezakoohkan/Plister.git", from: "1.0.8"),
+            .package(url: "https://github.com/mohamadrezakoohkan/Plister.git", from: "1.0.10"),
         ],
     targets: [
             .target(

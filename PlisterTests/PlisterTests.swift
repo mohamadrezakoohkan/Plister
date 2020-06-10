@@ -8,6 +8,7 @@
 
 
 import XCTest
+@testable import PlisterApp
 @testable import Plister
 
 func PAssert<T: Equatable>(_ result: T, _ expected: T) {

@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DD033112236EB0A100B2F5F7 /* Plist+Encryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD033111236EB0A100B2F5F7 /* Plist+Encryption.swift */; };
-		DD033114236EB0D700B2F5F7 /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD033113236EB0D700B2F5F7 /* AES.swift */; };
 		DD498C6B241C2B600090BAC1 /* ci.yml in Resources */ = {isa = PBXBuildFile; fileRef = DD498C68241C2B600090BAC1 /* ci.yml */; };
 		DD5B38362468997F009A0E27 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5B38352468997F009A0E27 /* User.swift */; };
 		DDAE0ADB236C8C710013986D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAE0ADA236C8C710013986D /* AppDelegate.swift */; };
@@ -17,13 +15,6 @@
 		DDAE0AE2236C8C710013986D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDAE0AE0236C8C710013986D /* Main.storyboard */; };
 		DDAE0AE4236C8C720013986D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDAE0AE3236C8C720013986D /* Assets.xcassets */; };
 		DDAE0AE7236C8C720013986D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDAE0AE5236C8C720013986D /* LaunchScreen.storyboard */; };
-		DDAE0B13236C8CB60013986D /* JSONSerialization+Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAE0B0C236C8CB60013986D /* JSONSerialization+Handler.swift */; };
-		DDAE0B14236C8CB60013986D /* String+Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAE0B0D236C8CB60013986D /* String+Operator.swift */; };
-		DDAE0B15236C8CB60013986D /* FileManager+DocumentDir.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAE0B0E236C8CB60013986D /* FileManager+DocumentDir.swift */; };
-		DDAE0B16236C8CB60013986D /* URL+PlistHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAE0B0F236C8CB60013986D /* URL+PlistHandler.swift */; };
-		DDAE0B17236C8CB60013986D /* Plist+Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAE0B10236C8CB60013986D /* Plist+Methods.swift */; };
-		DDAE0B18236C8CB60013986D /* Plist.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAE0B11236C8CB60013986D /* Plist.swift */; };
-		DDAE0B19236C8CB60013986D /* Plist+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAE0B12236C8CB60013986D /* Plist+Error.swift */; };
 		DDAE0B1D236C8CD00013986D /* Plister.podspec in Resources */ = {isa = PBXBuildFile; fileRef = DDAE0B1A236C8CCF0013986D /* Plister.podspec */; };
 		DDAE0B1E236C8CD00013986D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DDAE0B1B236C8CCF0013986D /* README.md */; };
 		DDAE0B1F236C8CD00013986D /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = DDAE0B1C236C8CCF0013986D /* LICENSE.md */; };
@@ -36,8 +27,17 @@
 		DDAE0B35236CABA40013986D /* SubmitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAE0B34236CABA40013986D /* SubmitButton.swift */; };
 		DDB60A9F238AF26D003485FB /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB60A9E238AF26D003485FB /* HeaderView.swift */; };
 		DDDD10462490FFBB006C4183 /* Plister.h in Headers */ = {isa = PBXBuildFile; fileRef = DDDD10442490FFBB006C4183 /* Plister.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DDDD10492490FFBB006C4183 /* Plister.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDDD10422490FFBB006C4183 /* Plister.framework */; };
-		DDDD104A2490FFBB006C4183 /* Plister.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DDDD10422490FFBB006C4183 /* Plister.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DDDD106E249108BE006C4183 /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD1064249108BE006C4183 /* AES.swift */; };
+		DDDD106F249108BE006C4183 /* Plist+Encryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD1065249108BE006C4183 /* Plist+Encryption.swift */; };
+		DDDD1070249108BE006C4183 /* JSONSerialization+Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD1067249108BE006C4183 /* JSONSerialization+Handler.swift */; };
+		DDDD1071249108BE006C4183 /* String+Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD1068249108BE006C4183 /* String+Operator.swift */; };
+		DDDD1072249108BE006C4183 /* FileManager+DocumentDir.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD1069249108BE006C4183 /* FileManager+DocumentDir.swift */; };
+		DDDD1073249108BE006C4183 /* URL+PlistHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD106A249108BE006C4183 /* URL+PlistHandler.swift */; };
+		DDDD1074249108BE006C4183 /* Plist+Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD106B249108BE006C4183 /* Plist+Methods.swift */; };
+		DDDD1075249108BE006C4183 /* Plist.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD106C249108BE006C4183 /* Plist.swift */; };
+		DDDD1076249108BE006C4183 /* Plist+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD106D249108BE006C4183 /* Plist+Error.swift */; };
+		DDDD107824916E2C006C4183 /* Plister.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDDD10422490FFBB006C4183 /* Plister.framework */; };
+		DDDD107924916E2C006C4183 /* Plister.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DDDD10422490FFBB006C4183 /* Plister.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DDE65740238C722600433C6A /* Plister.png in Resources */ = {isa = PBXBuildFile; fileRef = DDE6573F238C722600433C6A /* Plister.png */; };
 		DDEA4A4B23817C6B00B71F2D /* PlisterEncryptedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEA4A4A23817C6B00B71F2D /* PlisterEncryptedTests.swift */; };
 /* End PBXBuildFile section */
@@ -50,7 +50,7 @@
 			remoteGlobalIDString = DDAE0AD6236C8C710013986D;
 			remoteInfo = Plister;
 		};
-		DDDD10472490FFBB006C4183 /* PBXContainerItemProxy */ = {
+		DDDD107A24916E2C006C4183 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DDAE0ACF236C8C710013986D /* Project object */;
 			proxyType = 1;
@@ -60,13 +60,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		DDDD104E2490FFBB006C4183 /* Embed Frameworks */ = {
+		DDDD107C24916E2C006C4183 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DDDD104A2490FFBB006C4183 /* Plister.framework in Embed Frameworks */,
+				DDDD107924916E2C006C4183 /* Plister.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,8 +74,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		DD033111236EB0A100B2F5F7 /* Plist+Encryption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Plist+Encryption.swift"; sourceTree = "<group>"; };
-		DD033113236EB0D700B2F5F7 /* AES.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES.swift; sourceTree = "<group>"; };
 		DD498C68241C2B600090BAC1 /* ci.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = ci.yml; sourceTree = "<group>"; };
 		DD5B38352468997F009A0E27 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DDAE0AD7236C8C710013986D /* PlisterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlisterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,13 +86,6 @@
 		DDAE0AE8236C8C720013986D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDAE0AED236C8C730013986D /* PlisterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlisterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDAE0AF3236C8C730013986D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DDAE0B0C236C8CB60013986D /* JSONSerialization+Handler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JSONSerialization+Handler.swift"; sourceTree = "<group>"; };
-		DDAE0B0D236C8CB60013986D /* String+Operator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Operator.swift"; sourceTree = "<group>"; };
-		DDAE0B0E236C8CB60013986D /* FileManager+DocumentDir.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+DocumentDir.swift"; sourceTree = "<group>"; };
-		DDAE0B0F236C8CB60013986D /* URL+PlistHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+PlistHandler.swift"; sourceTree = "<group>"; };
-		DDAE0B10236C8CB60013986D /* Plist+Methods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Plist+Methods.swift"; sourceTree = "<group>"; };
-		DDAE0B11236C8CB60013986D /* Plist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plist.swift; sourceTree = "<group>"; };
-		DDAE0B12236C8CB60013986D /* Plist+Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Plist+Error.swift"; sourceTree = "<group>"; };
 		DDAE0B1A236C8CCF0013986D /* Plister.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Plister.podspec; sourceTree = SOURCE_ROOT; };
 		DDAE0B1B236C8CCF0013986D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		DDAE0B1C236C8CCF0013986D /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = SOURCE_ROOT; };
@@ -111,6 +102,15 @@
 		DDDD10422490FFBB006C4183 /* Plister.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Plister.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDDD10442490FFBB006C4183 /* Plister.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Plister.h; sourceTree = "<group>"; };
 		DDDD10452490FFBB006C4183 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDDD1064249108BE006C4183 /* AES.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AES.swift; sourceTree = "<group>"; };
+		DDDD1065249108BE006C4183 /* Plist+Encryption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Plist+Encryption.swift"; sourceTree = "<group>"; };
+		DDDD1067249108BE006C4183 /* JSONSerialization+Handler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JSONSerialization+Handler.swift"; sourceTree = "<group>"; };
+		DDDD1068249108BE006C4183 /* String+Operator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Operator.swift"; sourceTree = "<group>"; };
+		DDDD1069249108BE006C4183 /* FileManager+DocumentDir.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+DocumentDir.swift"; sourceTree = "<group>"; };
+		DDDD106A249108BE006C4183 /* URL+PlistHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+PlistHandler.swift"; sourceTree = "<group>"; };
+		DDDD106B249108BE006C4183 /* Plist+Methods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Plist+Methods.swift"; sourceTree = "<group>"; };
+		DDDD106C249108BE006C4183 /* Plist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plist.swift; sourceTree = "<group>"; };
+		DDDD106D249108BE006C4183 /* Plist+Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Plist+Error.swift"; sourceTree = "<group>"; };
 		DDE6573F238C722600433C6A /* Plister.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Plister.png; sourceTree = SOURCE_ROOT; };
 		DDEA4A4A23817C6B00B71F2D /* PlisterEncryptedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlisterEncryptedTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,7 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDDD10492490FFBB006C4183 /* Plister.framework in Frameworks */,
+				DDDD107824916E2C006C4183 /* Plister.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +157,7 @@
 				DDAE0AF0236C8C730013986D /* PlisterTests */,
 				DDDD10432490FFBB006C4183 /* Plister */,
 				DDAE0AD8236C8C710013986D /* Products */,
+				DDDD107724916E2C006C4183 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -174,7 +175,6 @@
 			isa = PBXGroup;
 			children = (
 				DDDB530723829B29008C5ECA /* Plister.entitlements */,
-				DDAE0B0A236C8CB60013986D /* Source */,
 				DDAE0ADA236C8C710013986D /* AppDelegate.swift */,
 				DDAE0ADC236C8C710013986D /* SceneDelegate.swift */,
 				DDAE0ADE236C8C710013986D /* ViewController.swift */,
@@ -207,30 +207,6 @@
 			path = PlisterTests;
 			sourceTree = "<group>";
 		};
-		DDAE0B0A236C8CB60013986D /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				DDAE0B0B236C8CB60013986D /* Utilities */,
-				DDAE0B11236C8CB60013986D /* Plist.swift */,
-				DDAE0B10236C8CB60013986D /* Plist+Methods.swift */,
-				DD033111236EB0A100B2F5F7 /* Plist+Encryption.swift */,
-				DDAE0B12236C8CB60013986D /* Plist+Error.swift */,
-				DD033113236EB0D700B2F5F7 /* AES.swift */,
-			);
-			path = Source;
-			sourceTree = SOURCE_ROOT;
-		};
-		DDAE0B0B236C8CB60013986D /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				DDAE0B0C236C8CB60013986D /* JSONSerialization+Handler.swift */,
-				DDAE0B0D236C8CB60013986D /* String+Operator.swift */,
-				DDAE0B0E236C8CB60013986D /* FileManager+DocumentDir.swift */,
-				DDAE0B0F236C8CB60013986D /* URL+PlistHandler.swift */,
-			);
-			path = Utilities;
-			sourceTree = "<group>";
-		};
 		DDAE0B31236C9F210013986D /* Form */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,10 +221,42 @@
 		DDDD10432490FFBB006C4183 /* Plister */ = {
 			isa = PBXGroup;
 			children = (
+				DDDD1063249108BE006C4183 /* Source */,
 				DDDD10442490FFBB006C4183 /* Plister.h */,
 				DDDD10452490FFBB006C4183 /* Info.plist */,
 			);
 			path = Plister;
+			sourceTree = "<group>";
+		};
+		DDDD1063249108BE006C4183 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				DDDD1064249108BE006C4183 /* AES.swift */,
+				DDDD1065249108BE006C4183 /* Plist+Encryption.swift */,
+				DDDD1066249108BE006C4183 /* Utilities */,
+				DDDD106B249108BE006C4183 /* Plist+Methods.swift */,
+				DDDD106C249108BE006C4183 /* Plist.swift */,
+				DDDD106D249108BE006C4183 /* Plist+Error.swift */,
+			);
+			path = Source;
+			sourceTree = SOURCE_ROOT;
+		};
+		DDDD1066249108BE006C4183 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				DDDD1067249108BE006C4183 /* JSONSerialization+Handler.swift */,
+				DDDD1068249108BE006C4183 /* String+Operator.swift */,
+				DDDD1069249108BE006C4183 /* FileManager+DocumentDir.swift */,
+				DDDD106A249108BE006C4183 /* URL+PlistHandler.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		DDDD107724916E2C006C4183 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,12 +280,12 @@
 				DDAE0AD3236C8C710013986D /* Sources */,
 				DDAE0AD4236C8C710013986D /* Frameworks */,
 				DDAE0AD5236C8C710013986D /* Resources */,
-				DDDD104E2490FFBB006C4183 /* Embed Frameworks */,
+				DDDD107C24916E2C006C4183 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DDDD10482490FFBB006C4183 /* PBXTargetDependency */,
+				DDDD107B24916E2C006C4183 /* PBXTargetDependency */,
 			);
 			name = PlisterApp;
 			productName = Plister;
@@ -402,19 +410,10 @@
 			files = (
 				DDAE0B33236CA7800013986D /* MarginLabel.swift in Sources */,
 				DDAE0B30236C9EF20013986D /* FormStackView.swift in Sources */,
-				DDAE0B16236C8CB60013986D /* URL+PlistHandler.swift in Sources */,
 				DDAE0B2E236C9AF00013986D /* InputStackView.swift in Sources */,
-				DDAE0B17236C8CB60013986D /* Plist+Methods.swift in Sources */,
-				DDAE0B15236C8CB60013986D /* FileManager+DocumentDir.swift in Sources */,
 				DDB60A9F238AF26D003485FB /* HeaderView.swift in Sources */,
-				DDAE0B18236C8CB60013986D /* Plist.swift in Sources */,
-				DDAE0B13236C8CB60013986D /* JSONSerialization+Handler.swift in Sources */,
-				DD033112236EB0A100B2F5F7 /* Plist+Encryption.swift in Sources */,
 				DDAE0ADF236C8C710013986D /* ViewController.swift in Sources */,
-				DDAE0B14236C8CB60013986D /* String+Operator.swift in Sources */,
-				DDAE0B19236C8CB60013986D /* Plist+Error.swift in Sources */,
 				DDAE0B35236CABA40013986D /* SubmitButton.swift in Sources */,
-				DD033114236EB0D700B2F5F7 /* AES.swift in Sources */,
 				DDAE0ADB236C8C710013986D /* AppDelegate.swift in Sources */,
 				DDAE0ADD236C8C710013986D /* SceneDelegate.swift in Sources */,
 			);
@@ -436,6 +435,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDDD106E249108BE006C4183 /* AES.swift in Sources */,
+				DDDD1073249108BE006C4183 /* URL+PlistHandler.swift in Sources */,
+				DDDD1075249108BE006C4183 /* Plist.swift in Sources */,
+				DDDD1070249108BE006C4183 /* JSONSerialization+Handler.swift in Sources */,
+				DDDD1071249108BE006C4183 /* String+Operator.swift in Sources */,
+				DDDD1072249108BE006C4183 /* FileManager+DocumentDir.swift in Sources */,
+				DDDD1076249108BE006C4183 /* Plist+Error.swift in Sources */,
+				DDDD106F249108BE006C4183 /* Plist+Encryption.swift in Sources */,
+				DDDD1074249108BE006C4183 /* Plist+Methods.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,10 +455,10 @@
 			target = DDAE0AD6236C8C710013986D /* PlisterApp */;
 			targetProxy = DDAE0AEE236C8C730013986D /* PBXContainerItemProxy */;
 		};
-		DDDD10482490FFBB006C4183 /* PBXTargetDependency */ = {
+		DDDD107B24916E2C006C4183 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DDDD10412490FFBB006C4183 /* Plister */;
-			targetProxy = DDDD10472490FFBB006C4183 /* PBXContainerItemProxy */;
+			targetProxy = DDDD107A24916E2C006C4183 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -594,7 +602,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Plister/Plister.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = QZ8D8NYCJ8;
 				INFOPLIST_FILE = Plister/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
@@ -602,7 +610,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.8;
+				MARKETING_VERSION = 1.0.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.applecode.library.Plister;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
@@ -617,7 +625,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Plister/Plister.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = KXGZDK8WNM;
 				INFOPLIST_FILE = Plister/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
@@ -625,7 +633,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.8;
+				MARKETING_VERSION = 1.0.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.applecode.library.Plister;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
@@ -687,7 +695,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 10;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = QZ8D8NYCJ8;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -701,6 +709,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.10;
 				PRODUCT_BUNDLE_IDENTIFIER = codes.mohamadreza.framework.Plister;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -716,7 +725,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 10;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = KXGZDK8WNM;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -730,6 +739,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.10;
 				PRODUCT_BUNDLE_IDENTIFIER = codes.mohamadreza.framework.Plister;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
