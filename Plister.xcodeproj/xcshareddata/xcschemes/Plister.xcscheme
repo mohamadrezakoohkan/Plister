@@ -64,6 +64,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "DDDD10412490FFBB006C4183"
+            BuildableName = "Plister.framework"
+            BlueprintName = "Plister"
+            ReferencedContainer = "container:Plister.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
